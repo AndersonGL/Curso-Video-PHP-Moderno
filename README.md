@@ -3,6 +3,29 @@
 
 
 ### Desafio 06 - A anotomia de uma divisão 
+
+<?php
+$dividendo = 37;
+$divisor   = 5;
+
+if ($divisor == 0) {
+  echo "Divisor não pode ser 0.";
+  exit;
+}
+
+$q = intdiv($dividendo, $divisor);
+$r = $dividendo % $divisor;
+
+echo "Dividendo: $dividendo\n";
+echo "Divisor:   $divisor\n";
+echo "Quociente: $q\n";
+echo "Resto:     $r\n";
+echo "Prova:     $divisor * $q + $r = " . ($divisor * $q + $r) . "\n";
+
+
+
+
+
 ### Desafio 07 - Salario minimo com PHP
 ### Desafio 08- Exercicios Raizes
 ### Desafio 09- Endendendo as Médias
